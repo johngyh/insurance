@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百歲人生保險規劃建議</title>
+    <style>
+        :root {
+            --primary-color: #1a365d;
+            --accent-color: #2b6cb0;
+            --bg-light: #f7fafc;
+            --text-dark: #2d3748;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            margin: 0;
+            background-color: var(--bg-light);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: var(--white);
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-top: 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: -2rem auto 3rem;
+            padding: 0 1.5rem;
+        }
+
+        .card {
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-left: 5px solid var(--accent-color);
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* 四大原則樣式 */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .principle-item {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .principle-item:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
+
+        .principle-item h3 {
+            color: var(--accent-color);
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .number {
+            background: var(--accent-color);
+            color: white;
+            width: 28px;
+            height: 28px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin-right: 10px;
+            font-size: 0.9rem;
+        }
+
+        .highlight-box {
+            background-color: #ebf4ff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #38a169;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #2f855a;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem;
+            color: #718096;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>給未來的自己，一份百歲人生的守護信</h1>
+    <p>拋棄複雜術語，用專業邏輯看懂保險規劃</p>
+</header>
+
+<div class="container">
+    <section class="card">
+        <h2>買對保險，先掌握四大原則</h2>
+        <p>保險不是買心安，而是要在風險發生時，真正能幫你解決問題。</p>
+        
+        <div class="grid">
+            <div class="principle-item">
+                <h3><span class="number">1</span>核保難度</h3>
+                <p><strong>買保險是「健康」在買，不是有錢就行。</strong> 當體檢出現紅字或身體有小毛病時，想買保險會面臨加費、除外甚至拒保。趁健康時拿好門票是第一要務。</p>
+            </div>
+            
+            <div class="principle-item">
+                <h3><span class="number">2</span>保費增加速度</h3>
+                <p><strong>魔鬼藏在費率裡。</strong> 許多定期險會隨年齡飆漲保費。規劃時必須考慮老後收入減少時，是否仍繳得起？鎖定未來成本是長壽社會的關鍵。</p>
+            </div>
+            
+            <div class="principle-item">
+                <h3><span class="number">3</span>保大不保小</h3>
+                <p><strong>錢要花在刀口上。</strong> 保險是用來轉嫁無法負擔的巨額損失（如癌症、失能）。像「感冒掛號費」這種小支出應自行負擔，避免浪費保費預算。</p>
+            </div>
+            
+            <div class="principle-item">
+                <h3><span class="number">4</span>保額要足夠</h3>
+                <p><strong>買錯比沒買更慘。</strong> 若手術費要 50 萬你只保 5 萬，這叫杯水車薪。規劃時，每個險種的額度一定要做到「能解決問題」。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>為什麼「醫療實支實付」最重要？</h2>
+        <p>在目前的醫療體制下，高額的自費醫材與藥物已成趨勢。實支實付能精準填補這些財務黑洞。</p>
+        
+        <div class="highlight-box">
+            <h3>🛡️ 邁向百歲人生：補強「終身」實支實付</h3>
+            <p>隨著活得越久，晚年的醫療需求與成本越高。透過終身型的規劃，能幫您在邁向百歲的過程中，鎖定醫療保障，不必擔心老後因費率調漲而被迫放棄保障。</p>
+        </div>
+    </section>
+
+    <section class="card" style="text-align: center;">
+        <h2>想知道目前的保單是否符合原則？</h2>
+        <p>我提供免費的「保單健檢」服務，用專業邏輯為您的防護網進行診斷。</p>
+        <a href="#" class="cta-button">立即預約諮詢 (Line)</a>
+    </section>
+</div>
+
+<footer>
+    <p>© 2026 您的姓名/單位 · 保險規劃是一輩子的責任</p>
+</footer>
+
+</body>
+</html>
