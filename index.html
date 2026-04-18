@@ -73,7 +73,6 @@
             font-size: 1.8rem;
         }
 
-        /* 自我介紹照片區 */
         .bio-section {
             display: flex;
             align-items: center;
@@ -92,6 +91,9 @@
             border: 4px solid var(--white);
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             background-color: #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .bio-photo {
@@ -119,7 +121,6 @@
             margin-bottom: 1rem;
         }
 
-        /* 四大原則網格 */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -157,7 +158,6 @@
             fill: var(--accent-color);
         }
 
-        /* 保費示意圖 */
         .chart-container {
             background-color: #f8fafc;
             border-radius: 12px;
@@ -198,7 +198,6 @@
             font-weight: bold;
         }
 
-        /* 按鈕樣式 */
         .cta-button {
             display: inline-flex;
             align-items: center;
@@ -250,12 +249,12 @@
     <section class="card">
         <div class="bio-section">
             <div class="bio-image-wrapper">
-                <img src="me.png" alt="顧問照片" class="bio-photo">
+                <img src="./me.png?v=2026" alt="顧問照片" class="bio-photo">
             </div>
             <div class="bio-content">
                 <span class="tag">台大電機畢業 × 理性數據規劃</span>
                 <h3>你好，我是您的規劃顧問</h3>
-                <p>我畢業於<strong>台大電機系</strong>。理工科的訓練背景，讓我習慣排除感性推銷，轉而用<strong>理性、科學、數據化</strong>的方式，重新審視保險的本質。在保險產業深耕超過十年，我深知保單不該只是合約，而是應對風險的精密工程。</p>
+                <p>我畢業於<strong>台大電機系</strong>。工程師的訓練背景，讓我習慣排除感性推銷，轉而用<strong>理性、科學、數據化</strong>的方式，重新審視保險的本質。在保險產業深耕超過十年，我深知保單不該只是合約，而是應對風險的精密工程。</p>
             </div>
         </div>
 
@@ -280,7 +279,7 @@
                     <svg class="principle-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
                 </div>
                 <h3>3. 保大不保小</h3>
-                <p>專注轉嫁巨額損失（如癌症）。小額支出自行負擔。</p>
+                <p>專注轉嫁巨額損失（如癌症）。掛號費等支出自行負擔。</p>
             </div>
             <div class="principle-item">
                 <div class="principle-icon-wrapper">
@@ -294,7 +293,7 @@
 
     <section class="card">
         <h2>邁向百歲人生：補強「終身」實支實付</h2>
-        <p>工程師思維：晚年醫療需求最高，定期險老後保費會隨年齡陡峭上升。我們的主張是根據不同預算，量身打造不同比例的終身型保險。</p>
+        <p>工程師思維：晚年醫療需求最高，定期險老後保費會隨年齡陡峭上升。我們的主張是透過終身型規劃鎖定成本。</p>
         
         <div class="chart-container">
             <div class="chart-visual">
@@ -310,7 +309,7 @@
 
     <section class="card" style="text-align: center;">
         <h2>想用理性邏輯診斷您的保單嗎？</h2>
-        <p>我提供基於數據與邏輯的「一次免費保單健檢」，拒絕人情壓力。</p>
+        <p>我提供基於數據與邏輯的「免費保單健檢」，拒絕人情壓力。</p>
         <br>
         <a href="https://line.me/ti/p/lt3aKzGlog" class="cta-button" target="_blank">
             <svg class="line-icon" viewBox="0 0 24 24"><path d="M24 10.304c0-4.579-4.834-8.304-10.783-8.304-5.949 0-10.784 3.725-10.784 8.304 0 4.1 3.829 7.536 9 8.165l-.643 3.861c-.021.135.093.253.224.212l4.545-2.628c3.96-.307 7.441-3.235 7.441-7.61zm-15.111 2.373h-2.126c-.198 0-.359-.161-.359-.359v-4.015c0-.198.161-.359.359-.359h2.126c.198 0 .359.161.359.359s-.161.359-.359.359h-1.767v1.144h1.767c.198 0 .359.161.359.359s-.161.359-.359.359h-1.767v1.144h1.767c.198 0 .359.161.359.359s-.161.359-.359.359zm3.82 0h-2.126c-.198 0-.359-.161-.359-.359v-4.015c0-.198.161-.359.359-.359s.359.161.359.359v3.656h1.767c.198 0 .359.161.359.359s-.161.359-.359.359zm2.46 0c-.198 0-.359-.161-.359-.359v-4.015c0-.198.161-.359.359-.359s.359.161.359.359v4.015c0 .198-.161.359-.359.359zm4.61 0h-2.126c-.198 0-.359-.161-.359-.359v-4.015c0-.198.161-.359.359-.359.132 0 .248.072.312.18l1.731 2.918v-2.739c0-.198.161-.359.359-.359s.359.161.359.359v4.015c0 .132-.072.248-.18.312-.056.033-.119.05-.182.05z"/></svg>
@@ -320,7 +319,7 @@
 </div>
 
 <footer>
-    <p>© 理性保險規劃顧問 · 台大電機專業背景</p>
+    <p>© 2026 理性保險規劃顧問 · 台大電機專業背景</p>
     <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 10px;">用科學邏輯，守護您的百歲人生</p>
 </footer>
 
