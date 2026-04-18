@@ -1,3 +1,6 @@
+這是一個已經為您更新好 **Line 連結** 的完整 HTML 代碼。我同時微調了按鈕的顏色為 **Line 標誌性的綠色**，並加入了圖示，讓它看起來更直覺。
+您可以直接全選複製，覆蓋掉 GitHub 上的 index.html 內容：
+```html
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
@@ -8,6 +11,7 @@
         :root {
             --primary-color: #1a365d;
             --accent-color: #2b6cb0;
+            --line-green: #06C755;
             --bg-light: #f7fafc;
             --text-dark: #2d3748;
             --white: #ffffff;
@@ -61,7 +65,6 @@
             margin-bottom: 1.5rem;
         }
 
-        /* 四大原則樣式 */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -110,19 +113,30 @@
         }
 
         .cta-button {
-            display: inline-block;
-            background: #38a169;
+            display: inline-flex;
+            align-items: center;
+            background: var(--line-green);
             color: white;
-            padding: 1rem 2rem;
+            padding: 1.2rem 2.5rem;
             text-decoration: none;
             border-radius: 50px;
             font-weight: bold;
+            font-size: 1.2rem;
             margin-top: 1rem;
-            transition: background 0.3s;
+            transition: transform 0.2s, background 0.3s;
+            box-shadow: 0 4px 15px rgba(6, 199, 85, 0.3);
         }
 
         .cta-button:hover {
-            background: #2f855a;
+            background: #05b34c;
+            transform: scale(1.05);
+        }
+
+        .line-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            fill: white;
         }
 
         footer {
@@ -135,6 +149,7 @@
         @media (max-width: 600px) {
             header h1 { font-size: 1.8rem; }
             .grid { grid-template-columns: 1fr; }
+            .cta-button { padding: 1rem 1.5rem; font-size: 1rem; }
         }
     </style>
 </head>
@@ -142,7 +157,7 @@
 
 <header>
     <h1>給未來的自己，一份百歲人生的守護信</h1>
-    <p>拋棄複雜術語，用專業邏輯看懂保險規劃</p>
+    <p>專業保險規劃：四大核心原則 × 醫療終身防護</p>
 </header>
 
 <div class="container">
@@ -153,46 +168,53 @@
         <div class="grid">
             <div class="principle-item">
                 <h3><span class="number">1</span>核保難度</h3>
-                <p><strong>買保險是「健康」在買，不是有錢就行。</strong> 當體檢出現紅字或身體有小毛病時，想買保險會面臨加費、除外甚至拒保。趁健康時拿好門票是第一要務。</p>
+                <p><strong>買保險是「健康」在買，不是有錢就行。</strong> 當體檢出現紅字，想買保險會面臨加費或拒保。趁健康拿好門票是第一要務。</p>
             </div>
             
             <div class="principle-item">
                 <h3><span class="number">2</span>保費增加速度</h3>
-                <p><strong>魔鬼藏在費率裡。</strong> 許多定期險會隨年齡飆漲保費。規劃時必須考慮老後收入減少時，是否仍繳得起？鎖定未來成本是長壽社會的關鍵。</p>
+                <p><strong>魔鬼藏在費率裡。</strong> 許多定期險隨年齡飆漲保費。規劃時必須考慮老後收入減少時，是否仍繳得起？</p>
             </div>
             
             <div class="principle-item">
                 <h3><span class="number">3</span>保大不保小</h3>
-                <p><strong>錢要花在刀口上。</strong> 保險是用來轉嫁無法負擔的巨額損失（如癌症、失能）。像「感冒掛號費」這種小支出應自行負擔，避免浪費保費預算。</p>
+                <p><strong>錢要花在刀口上。</strong> 轉嫁無法負擔的巨額損失（如癌症）。感冒掛號費等小支出應自行負擔，避免浪費預算。</p>
             </div>
             
             <div class="principle-item">
                 <h3><span class="number">4</span>保額要足夠</h3>
-                <p><strong>買錯比沒買更慘。</strong> 若手術費要 50 萬你只保 5 萬，這叫杯水車薪。規劃時，每個險種的額度一定要做到「能解決問題」。</p>
+                <p><strong>買錯比沒買更慘。</strong> 額度必須做到「能解決問題」，否則風險發生時依然要自掏腰包。</p>
             </div>
         </div>
     </section>
 
     <section class="card">
-        <h2>為什麼「醫療實支實付」最重要？</h2>
-        <p>在目前的醫療體制下，高額的自費醫材與藥物已成趨勢。實支實付能精準填補這些財務黑洞。</p>
+        <h2>重點核心：為什麼「醫療實支實付」最重要？</h2>
+        <p>當前醫療自費材料與藥物比例極高。實支實付能精準填補健保無法負擔的財務黑洞。</p>
         
         <div class="highlight-box">
             <h3>🛡️ 邁向百歲人生：補強「終身」實支實付</h3>
-            <p>隨著活得越久，晚年的醫療需求與成本越高。透過終身型的規劃，能幫您在邁向百歲的過程中，鎖定醫療保障，不必擔心老後因費率調漲而被迫放棄保障。</p>
+            <p>隨著活得越久，晚年醫療需求越高。透過終身型的規劃，能幫您鎖定醫療成本，不必擔心老後因費率調漲而繳不起保費，確保醫療尊嚴。</p>
         </div>
     </section>
 
     <section class="card" style="text-align: center;">
-        <h2>想知道目前的保單是否符合原則？</h2>
-        <p>我提供免費的「保單健檢」服務，用專業邏輯為您的防護網進行診斷。</p>
-        <a href="#" class="cta-button">立即預約諮詢 (Line)</a>
+        <h2>想知道您的保單是否符合原則？</h2>
+        <p>我提供專業的「保單健檢」服務，用科學邏輯為您的防護網進行診斷。</p>
+        
+        <a href="https://line.me/ti/p/lt3aKzGlog" class="cta-button" target="_blank">
+            <svg class="line-icon" viewBox="0 0 24 24"><path d="M24 10.304c0-4.579-4.834-8.304-10.783-8.304-5.949 0-10.784 3.725-10.784 8.304 0 4.1 3.829 7.536 9 8.165l-.643 3.861c-.021.135.093.253.224.212l4.545-2.628c3.96-.307 7.441-3.235 7.441-7.61zm-15.111 2.373h-2.126c-.198 0-.359-.161-.359-.359v-4.015c0-.198.161-.359.359-.359h2.126c.198 0 .359.161.359.359s-.161.359-.359.359h-1.767v1.144h1.767c.198 0 .359.161.359.359s-.161.359-.359.359h-1.767v1.144h1.767c.198 0 .359.161.359.359s-.161.359-.359.359zm3.82 0h-2.126c-.198 0-.359-.161-.359-.359v-4.015c0-.198.161-.359.359-.359s.359.161.359.359v3.656h1.767c.198 0 .359.161.359.359s-.161.359-.359.359zm2.46 0c-.198 0-.359-.161-.359-.359v-4.015c0-.198.161-.359.359-.359s.359.161.359.359v4.015c0 .198-.161.359-.359.359zm4.61 0h-2.126c-.198 0-.359-.161-.359-.359v-4.015c0-.198.161-.359.359-.359.132 0 .248.072.312.18l1.731 2.918v-2.739c0-.198.161-.359.359-.359s.359.161.359.359v4.015c0 .132-.072.248-.18.312-.056.033-.119.05-.182.05z"/></svg>
+            立即預約諮詢 (Line)
+        </a>
+        <p style="font-size: 0.8rem; color: #a0aec0; margin-top: 15px;">點擊按鈕將開啟 Line 應用程式</p>
     </section>
 </div>
 
 <footer>
-    <p>© 2026 您的姓名/單位 · 保險規劃是一輩子的責任</p>
+    <p>© 2026 您的專業保險顧問 · 規劃百歲人生的安全感</p>
 </footer>
 
 </body>
 </html>
+
+```
